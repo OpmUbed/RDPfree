@@ -11,8 +11,7 @@ jobs:
     steps:
     - name: Download Ngrok
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/redgans/RDPfree/main/start.bat -OutFile start.bat
+                Invoke-WebRequest https://raw.githubusercontent.com/redgans/RDPfree/main/start.bat -OutFile start.bat
         luRDPfree/main/loop.bat -OutFile loop.bat
     - name: Download Launcher
       run: |
